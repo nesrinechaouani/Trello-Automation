@@ -64,7 +64,7 @@ Set these in your Lambda function configuration:
 | Variable | Description | Example |
 |----------|-------------|---------|
 | `MONGO_URI` | MongoDB connection string | `mongodb+srv://user:pass@cluster.mongodb.net/` |
-| `MONGO_DB` | Database name | `lookinglass03` |
+| `MONGO_DB` | Database name | `your_db` |
 | `MONGO_COLLECTION` | Collection name | `archived_cards` |
 | `WEBHOOK_CALLBACK_URL` | API Gateway URL | `https://xxxxx.execute-api.region.amazonaws.com/trello` |
 
@@ -168,7 +168,7 @@ Should return `200 OK`.
 2. Set environment variables:
    ```bash
    export MONGO_URI="your_mongodb_uri"
-   export MONGO_DB="lookinglass03"
+   export MONGO_DB="your_db"
    export MONGO_COLLECTION="archived_cards"
    ```
 
