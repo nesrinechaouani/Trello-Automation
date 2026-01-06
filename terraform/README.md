@@ -36,7 +36,7 @@ Create a `terraform.tfvars` file:
 aws_region     = "eu-west-1"
 function_name  = "trelloWebhookHandler"
 mongo_uri      = "mongodb+srv://user:pass@cluster.mongodb.net/"
-mongo_db       = "lookinglass03"
+mongo_db       = "your_db"
 mongo_collection = "archived_cards"
 ```
 
@@ -138,7 +138,7 @@ terraform apply
 | `function_name` | Lambda function name | No | `trelloWebhookHandler` |
 | `lambda_zip_path` | Path to deployment package | No | `../function.zip` |
 | `mongo_uri` | MongoDB connection string | Yes | - |
-| `mongo_db` | Database name | No | `lookinglass03` |
+| `mongo_db` | Database name | No | `your_db` |
 | `mongo_collection` | Collection name | No | `archived_cards` |
 | `log_retention_days` | CloudWatch log retention | No | `7` |
 | `tags` | Resource tags | No | See variables.tf |
