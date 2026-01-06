@@ -130,31 +130,6 @@ curl -X GET https://YOUR_API_GATEWAY_URL/trello
 
 Should return `200 OK`.
 
-## 📁 Project Structure
-
-```
-.
-├── README.md
-├── docs/
-│   ├── architecture.png
-│   ├── setup-guide.md
-│   └── api-reference.md
-├── src/
-│   ├── lambda_function.py
-│   └── requirements.txt
-├── scripts/
-│   ├── register-webhook.sh
-│   ├── test-webhook.sh
-│   └── deploy.sh
-├── terraform/
-│   ├── main.tf
-│   ├── variables.tf
-│   └── outputs.tf
-└── .github/
-    └── workflows/
-        └── deploy.yml
-```
-
 ## 🛠️ Development
 
 ### Local Testing
