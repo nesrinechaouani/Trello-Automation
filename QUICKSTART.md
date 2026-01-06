@@ -55,7 +55,7 @@ In AWS Lambda console:
 2. Configuration → Environment variables
 3. Add:
    - `MONGO_URI`
-   - `MONGO_DB` = `lookinglass03`
+   - `MONGO_DB` = `your_db03`
    - `MONGO_COLLECTION` = `archived_cards`
 
 ### Step 4: Get API Gateway URL (1 min)
@@ -111,7 +111,7 @@ Your integration is now live! Every time a card is archived:
 
 ```javascript
 // In MongoDB Compass or Shell
-use lookinglass03
+use your_db03
 db.archived_cards.find().sort({ archivedAt: -1 }).limit(5)
 ```
 
